@@ -4,17 +4,23 @@ class DestinationsController < ApplicationController
   end
 
   def amsterdam
-    @comments = Comment.where(destination:'amsterdam').order('created_at desc')
+    @comments = fetch_comments('amsterdam')
     render :amsterdam
   end
 
   def provence
-    @comments = []
+    @comments = fetch_comments('provence')
     render :provence
   end
 
   def tasmania
-    @comments = []
+    @comments = fetch_comments('tasmania')
     render :tasmania
+  end
+
+  private
+
+  def fetch_comments(destination)
+    Comment.where(destination: destination).order('created_at desc')
   end
 end
