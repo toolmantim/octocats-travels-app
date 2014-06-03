@@ -4,7 +4,7 @@ class DestinationsController < ApplicationController
   end
 
   def amsterdam
-    @comments = []
+    @comments = Comment.where(destination:'amsterdam').order('created_at desc')
     render :amsterdam
   end
 
