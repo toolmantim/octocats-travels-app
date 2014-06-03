@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  # root 'destinations#index'
+  root 'destinations#index'
 
   get '/amsterdam' => 'destinations#amsterdam'
   get '/provence' => 'destinations#provence'
