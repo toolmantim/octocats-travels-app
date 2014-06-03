@@ -2,7 +2,9 @@ class CommentsController < ApplicationController
   def create
     destination = params[:destination]
 
-    # TODO: Create a comment in the database
+    Comment.create!(destination: params[:destination],
+                    name: params[:name],
+                    comment: params[:comment])
 
     redirect_to "/#{destination}"
   end
