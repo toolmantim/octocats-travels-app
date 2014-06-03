@@ -5,10 +5,10 @@ A small site for introducing the basics of backend programming.
 
 ### Tasks
 
-* Made the homepage appear (config/routes.rb)
-* Fix the image helper tags on the Provence page
-* Add the comment creation in CommentsController
-* Add the comment fetching for Provence and Tasmania in DestinationsController
+* Make the homepage appear (config/routes.rb)
+* Fix the images on the Provence page
+* Fix the comment saving (CommentsController)
+* Fix the comment fetching for Provence and Tasmania (DestinationsController)
 
 ### Solution
 
