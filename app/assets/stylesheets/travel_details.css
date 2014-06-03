@@ -1,0 +1,32 @@
+/* Travel page styles */
+
+.travel-details h1 {
+  font-size: 54px;
+  font-weight: 200;
+  margin-bottom: 20px;
+}
+
+.travel-details .image-floated-right {
+  float: right;
+  max-width: 300px;
+  margin-left: 20px;
+}
+
+.travel-details .image-floated-left {
+  float: left;
+  max-width: 300px;
+  margin-right: 20px;
+}
+
+.travel-details img {
+  max-width: 100%;
+}
+
+.travel-details footer {
+  font-weight: 200;
+  margin-top: 20px;
+  font-size: 24px;
+}
+.travel-details footer a {
+  font-weight: 400;
+}

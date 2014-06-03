@@ -1,15 +1,86 @@
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any styles
- * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
- * file per style scope.
- *
- *= require_tree .
+ *= require normalize.css
  *= require_self
+ *= require_tree .
  */
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #faf2e0;
+  color: #281303;
+}
+
+/* Float helper */
+
+.clearfix::before,
+.clearfix::after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+/* Element styles */
+
+body {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a {
+  color: #552905;
+}
+
+/* Generic styles */
+
+.button {
+  background-color: rgba(0,85,212,.9);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+}
+.button:hover {
+  background-color: rgba(0,85,212,1);
+}
+
+/* Site header styles */
+
+.site-header {
+  padding-bottom: 15px;
+  border-bottom: 1px solid #552905;
+}
+
+.site-header h1 {
+  font-size: 72px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.site-header h1 a {
+  text-decoration: none;
+}
+
+.site-header p {
+  margin: 0;
+  font-size: 24px;
+  opacity: .5;
+  font-style: italic;
+  float: left;
+}
+
+.site-header nav {
+  margin: 0;
+  float: right;
+}
+
+.site-header nav a + a {
+  margin-left: 10px;
+}
+
+/* Site footer styles */
+
+.site-footer {
+  border-top: 1px solid #552905;
+  margin-top: 20px;
+}

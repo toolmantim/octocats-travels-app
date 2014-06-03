@@ -1,0 +1,11 @@
+/* Travel index styles */
+
+.travel-index img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  margin-right: 10px;
+}
+.travel-index p {
+  max-width: 35em;
+}

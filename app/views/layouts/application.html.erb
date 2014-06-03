@@ -1,14 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-  <title>OctocatsTravelsApp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= yield %>
-
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>Octocat’s Travels</title>
+    <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400italic,700'>
+    <%= stylesheet_link_tag 'application', media: 'all'%>
+    <%= stylesheet_link_tag 'application', media: 'all'%>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <header class="site-header clearfix">
+      <h1><a href="/">Octocat’s Travels</a></h1>
+      <p>Adventures with food and friends</p>
+      <nav>
+        <a class="button" href="/amsterdam">Amsterdam</a>
+        <a class="button" href="/provence">Provence</a>
+        <a class="button" href="/tasmania">Tasmania</a>
+      </nav>
+    </header>
+    <%= yield %>
+    <footer class="site-footer">
+      <p><a class="button" href="mailto:email@me.com">Email me</a></p>
+    </footer>
+  </body>
 </html>
