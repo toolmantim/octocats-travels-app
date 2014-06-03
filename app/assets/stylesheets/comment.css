@@ -1,0 +1,15 @@
+.comment {
+  border-top: 1px solid #552905;
+  border-bottom: 1px solid #552905;
+}
+
+.comment .comment-name {
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.comment .comment-timestamp {
+  font-style: italic;
+  opacity: .6;
+}

@@ -1,0 +1,16 @@
+.comment-form {
+  width: 300px;
+}
+
+.comment-form input, .comment-form textarea, .comment-form submit {
+  width: 100%;
+}
+
+.comment-form label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.comment-form textarea {
+  height: 8em;
+}

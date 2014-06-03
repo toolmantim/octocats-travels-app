@@ -1,0 +1,21 @@
+<h1 id="comments">Comments</h1>
+
+<% @comments.each do |comment| %>
+  <div class="comment">
+    <h4 class="comment-name"><%= comment.name %> said: </h4>
+    <div class="comment-text"><%= simple_format comment.comment %></div>
+    <p class="comment-timestamp"><%= time_ago_in_words comment.created_at %> ago</p>
+  </div>
+<% end %>
+
+<%= form_tag post_url, class: 'comment-form' do %>
+  <p>
+    <label for="comment_name">Name</label>
+    <%= text_field_tag :name, '', id: 'comment_name', required: true %>
+  </p>
+  <p>
+    <label for="comment_comment">Comment</label>
+    <%= text_area_tag :comment, '', id: 'comment_comment', required: true %>
+  </p>
+  <p><%= submit_tag "Post comment" %></p>
+<% end %>
